@@ -49,7 +49,6 @@ public class FirstFragment extends Fragment {
         binding.spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getActivity(), "Clicked", Toast.LENGTH_LONG).show();
                 if(position == 0) {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                 }

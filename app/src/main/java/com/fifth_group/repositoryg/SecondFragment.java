@@ -16,6 +16,8 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.fifth_group.repositoryg.databinding.FragmentSecondBinding;
 
+import java.util.Objects;
+
 public class SecondFragment extends Fragment {
 
     private FragmentSecondBinding binding;
@@ -37,12 +39,9 @@ public class SecondFragment extends Fragment {
         binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.FirstFragment);
-
+                requireActivity().onBackPressed();
 
             }
-
         });
 
         binding.btnRead.setOnClickListener(new View.OnClickListener() {
